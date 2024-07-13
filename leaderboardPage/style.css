@@ -104,12 +104,12 @@ h1 {
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 8px;
 }
 .container {
     display: inline-block;
     margin-left: 28%;
-    margin-top: 30px;
+    margin-top: 9px;
     padding: 5px;
     width: 42%;
     border: solid black;
@@ -167,4 +167,14 @@ i{
     align-items: center;
     padding-top: 8px;
     margin-left: 40px;
+}
+.prizes h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prizes h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
