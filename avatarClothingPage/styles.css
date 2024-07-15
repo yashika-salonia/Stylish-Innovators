@@ -1,34 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
+
 header {
     display: flex;
     background-color: #ffffff;
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #b6b1b1;
+    border-bottom: 1px solid #000000;
 }
+
 .myntra_home {
     height: 45px;
 }
+
 .logo_container {
     margin-left: 4%;
 }
+
 .action_bar {
     margin-right: 4%;
 }
+
 .nav_bar {
     display: flex;
     min-width: 500px;
     justify-content: space-evenly;
 }
-#nav_bar_new{
+
+#nav_bar_new {
     padding: 21px 0px;
 }
+
 .nav_bar a {
     font-size: 14px;
     letter-spacing: .3px;
@@ -39,13 +46,16 @@ header {
     padding: 27px 0;
     border-bottom: 5px solid #ffffff;
 }
+
 .nav_bar a:hover {
     border-bottom: 4px solid #f54e77;
 }
+
 .nav_bar a sup {
     color: #ff3f6c;
     font-size: 2px;
 }
+
 .search_bar {
     height: 40px;
     min-width: 200px;
@@ -53,6 +63,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 .search_icon {
     box-sizing: content-box;
     height: 20px;
@@ -62,6 +73,7 @@ header {
     font-weight: 300;
     border-radius: 4px 0 0 4px;
 }
+
 .search_input {
     color: #696e79;
     background-color: #f5f5f6;
@@ -71,11 +83,13 @@ header {
     border: 0;
     border-radius: 0 4px 4px 0;
 }
+
 .action_bar {
     display: flex;
     min-width: 200px;
     justify-content: space-evenly;
 }
+
 .action_container {
     display: flex;
     flex-direction: column;
@@ -83,6 +97,7 @@ header {
     text-decoration: none;
     cursor: pointer;
 }
+
 .bag-item-count {
     background-color: #f16565;
     white-space: nowrap;
@@ -99,54 +114,135 @@ header {
     font-weight: 700;
     cursor: pointer;
 }
+
+/* avtar */
 body {
-    display: block;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
+
 .container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    /* display: flex; */
     width: 100%;
-    margin: 40px auto;
-    height: auto;
+    height: 100%;
 }
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-form {
+
+.try {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
 }
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
+
+.try img {
+    /* flex: 0 0 11.11%; */
+    flex: 3;
+    box-sizing: border-box;
+    margin: 500px;
+
 }
-input, select {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+
+.left-panel {
+    flex: 1;
+    /* padding: 20px; */
+    text-align: center;
+
+    overflow-y: auto;
+    max-height: 640px;
+
 }
-button {
-    background-color: #ff3e6c;
-    color: #fff;
-    border: none;
+
+.bottom,
+.top,
+.dress {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.bottom img,
+.top img,
+.dress img {
+
+    padding: 15px;
+    margin: 0px 40px;
+
+}
+
+.right-panel {
+    flex: 1;
+    /* padding: 20px; */
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.left-panel {
+    border-right: 1px solid #ccc;
+}
+
+.clothing-item {
+    width: 150px;
+    height: 250px;
+    /* margin: 10px; */
     cursor: pointer;
-    border-radius: 5px;
-    padding: 11px;
-    font-size: 16px;
 }
-button:hover {
+
+.avatar-container {
+
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.avatar-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#avatar {
+    width: 200px;
+    height: 400px;
+    align-items: center;
+    margin: 60px 143px;
+}
+
+#outfit {
+    align-items: center;
+    width: 297px;
+    height: 410px;
+    left: 57px;
+    margin: 50px;
+}
+
+#submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff3e6c;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+#submit:hover {
     background-color: #ff1f5a;
+}
+
+h3{
+    font-size: 23px;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 20px;
 }
